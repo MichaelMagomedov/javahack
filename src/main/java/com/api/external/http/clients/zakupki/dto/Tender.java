@@ -7,9 +7,11 @@ import java.util.List;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Tender {
 
-    public String organization;
-    public String tillDate;
-    public List<LotItem> lotItems;
+    private String organization;
+    private String tillDate;
+    private String signViewUrl;
+    private String provider;
+    private List<LotItem> lotItems;
 
     public Tender(String organization, String tillDate, List<LotItem> lotItems) {
         this.organization = organization;
@@ -41,6 +43,26 @@ public class Tender {
     }
 
     public void setLotItem(List<LotItem> lotItems) {
+        this.lotItems = lotItems;
+    }
+
+    public String getSignViewUrl() {
+        return signViewUrl;
+    }
+
+    public void setSignViewUrl(String signViewUrl) {
+        this.signViewUrl = signViewUrl;
+    }
+
+    public String getProvider() {
+        return provider;
+    }
+
+    public void setProvider(String provider) {
+        this.provider = provider;
+    }
+
+    public void setLotItems(List<LotItem> lotItems) {
         this.lotItems = lotItems;
     }
 }

@@ -22,16 +22,15 @@ import static org.apache.http.HttpHeaders.USER_AGENT;
 
 @Component
 public class ZakupkiHttpClient {
-
     private ObjectMapper objectMapper;
-
     private static final String ZAKUPKI_BASE_URL = "http://zakupki.gov.ru/api/mobile/proxy/epz/order/extendedsearch/results.html";
+
     @Autowired
     public ZakupkiHttpClient(ObjectMapper objectMapper) {
         this.objectMapper = objectMapper;
     }
 
-    public List<Tender> getTenders(String okpdId) throws IOException {
+    public List<Tender> getTenders(String okpdId, String priceToGeneral) throws IOException {
         HttpClient client = HttpClientBuilder.create().build();
         HttpGet request = new HttpGet(
                 ZAKUPKI_BASE_URL +
@@ -45,6 +44,7 @@ public class ZakupkiHttpClient {
                         "regions=5277335&" +
                         "currencyId=-1&" +
                         "okpd2Ids=" + okpdId +
+                        "priceToGeneral=" +
                         "&okpd2IdsWithNested=on"
         );
         request.addHeader("User-Agent", USER_AGENT);

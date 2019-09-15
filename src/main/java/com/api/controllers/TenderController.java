@@ -10,21 +10,22 @@ import java.io.IOException;
 
 @Controller
 @CrossOrigin
-public class TestController {
-
+public class TenderController {
     private TenderService tenderService;
-
     private ObjectMapper objectMapper;
 
     @Autowired
-    public TestController(TenderService tenderService, ObjectMapper objectMapper) {
+    public TenderController(TenderService tenderService, ObjectMapper objectMapper) {
         this.tenderService = tenderService;
         this.objectMapper = objectMapper;
     }
 
     @RequestMapping("/")
     @ResponseBody
-    public String getTenders(@RequestParam(value = "okpdId") String okpdId) throws IOException {
-        return objectMapper.writeValueAsString(tenderService.getTenders(okpdId));
+    public String getTenders(
+            @RequestParam(value = "okpdId") String okpdId,
+            @RequestParam(value = "priceToGeneral") String priceToGeneral
+    ) throws IOException {
+        return objectMapper.writeValueAsString(tenderService.getTenders(okpdId,priceToGeneral));
     }
 }
