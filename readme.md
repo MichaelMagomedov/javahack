@@ -2,10 +2,17 @@
 
 <p align="center"><img width=60% src="https://github.com/MichaelMagomedov/javahack/blob/master/media/tiender.jpg"></p>
 
+1) [Архитектура](#place-1) 
+2) [Architecture](#place-2)
+3) [Front-end](#place-3)
+4) [Back-end](#place-4)
+5) [Team](#place-5)
+
 Service for the full support of the entrepreneur until winning tender purchases. <br> 
 This repository implements the simple tender search functionality through an external API with any filters.
 
 <br>
+### Place 1
 
 ## Архитектура 
  Для реализации данного решения не требуется большого количества ресурсов, так как мы не являемся сложной тендерной площадкой. Мы ищем для клиента наиболее подходящие тендеры.
@@ -18,6 +25,8 @@ This repository implements the simple tender search functionality through an ext
 2) Обновление статусов тендера
 3) Обучение нейронной сети
 4) Формирования предложения клиенту
+
+<p align="center"><img width=100% src="https://sun9-57.userapi.com/c855132/v855132507/f7708/Ja3hN7VxVzY.jpg"></p>
 
 ## Architecture
 To implement this solution, a large amount of resources is not required, since we are not a complex tender site. We are looking for the most suitable tenders for the client.
