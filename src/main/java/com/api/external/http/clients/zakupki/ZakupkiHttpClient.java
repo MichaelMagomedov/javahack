@@ -59,10 +59,6 @@ public class ZakupkiHttpClient {
         return transformJsonResponseToList(result.toString());
     }
 
-    public Tender findById(String id) {
-
-        return null;
-    }
     private List<Tender> transformJsonResponseToList(String json) throws IOException {
         JsonNode root = objectMapper.readTree(json).path("list");
         return objectMapper.readValue(root.toString(), new TypeReference<List<Tender>>(){});
