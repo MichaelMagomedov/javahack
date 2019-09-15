@@ -8,7 +8,7 @@ This repository implements the simple tender search functionality through an ext
 <br>
 
 ## Front-end
-For the web part we used the **Angular js**. [Here is the repository](https://github.com/anfederico/Clairvoyant/blob/master/CONTRIBUTING.md)
+For the web part we used the **Angular js**. [Here is the repository](https://github.com/MichaelMagomedov/javahack_front)
 
 ## Back-end
 - Java ☕️
