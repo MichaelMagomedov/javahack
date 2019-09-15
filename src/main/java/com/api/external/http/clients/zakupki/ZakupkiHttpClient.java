@@ -44,7 +44,7 @@ public class ZakupkiHttpClient {
                         "regions=5277335&" +
                         "currencyId=-1&" +
                         "okpd2Ids=" + okpdId +
-                        "priceToGeneral=" +
+                        "&priceToGeneral=" +priceToGeneral+
                         "&okpd2IdsWithNested=on"
         );
         request.addHeader("User-Agent", USER_AGENT);
