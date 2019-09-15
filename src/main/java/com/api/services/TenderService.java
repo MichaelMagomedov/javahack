@@ -7,5 +7,5 @@ import java.io.IOException;
 import java.util.List;
 
 public interface TenderService {
-    public List<Tender> getTenders() throws IOException;
+    public List<Tender> getTenders(String okpdId) throws IOException;
 }

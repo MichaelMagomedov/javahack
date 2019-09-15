@@ -6,6 +6,7 @@ import java.util.List;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Tender {
+
     public String organization;
     public String tillDate;
     public List<LotItem> lotItems;

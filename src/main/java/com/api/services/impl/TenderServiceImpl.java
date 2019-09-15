@@ -20,7 +20,7 @@ public class TenderServiceImpl implements TenderService {
     }
 
     @Override
-    public List<Tender> getTenders() throws IOException {
-        return this.zakupkiHttpClient.getTenders();
+    public List<Tender> getTenders(String okpdId) throws IOException {
+        return this.zakupkiHttpClient.getTenders(okpdId);
     }
 }
