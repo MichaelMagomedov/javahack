@@ -12,7 +12,7 @@ Service for the full support of the entrepreneur until winning tender purchases.
 This repository implements the simple tender search functionality through an external API with any filters.
 
 <br>
-### Place 1
+
 
 ## Архитектура 
  Для реализации данного решения не требуется большого количества ресурсов, так как мы не являемся сложной тендерной площадкой. Мы ищем для клиента наиболее подходящие тендеры.
