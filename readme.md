@@ -1,6 +1,6 @@
 ## Raiffeisen hackathon, Moscow September 2019. Team "пэхэпэ"  🐘
 
-<p align="center"><img width=60% src="https://github.com/anfederico/Clairvoyant/blob/master/media/tiender.jpg"></p>
+<p align="center"><img width=60% src="https://github.com/MichaelMagomedov/javahack/blob/master/media/tiender.jpg"></p>
 
 
  
